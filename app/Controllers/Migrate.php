@@ -4,11 +4,15 @@
 namespace App\Controllers;
 
 
-class Migrate extends \CodeIgniter\Controller
+class Migrate extends BaseController
 {
 
-    public function index()
+    public function Run($password = "")
     {
+        if( $password !== getenv('PASS') ){
+            return $this->getErrorResponse("Not authorized", self::PATH_AUTH, "Dashboard");
+        }
+
         $migrate = \Config\Services::migrations();
 
         try

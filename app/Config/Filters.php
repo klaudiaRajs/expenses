@@ -17,7 +17,7 @@ class Filters extends BaseConfig
 	// Always applied before every request
 	public $globals = [
 		'before' => [
-            'auth' => ['except' => ['Auth/*', 'Auth']]
+            'auth' => ['except' => ['Auth/*', 'Auth', 'Migrate', 'Migrate/*']]
 		],
 		'after'  => [
 			'toolbar',
