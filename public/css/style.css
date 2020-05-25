@@ -1,0 +1,53 @@
+.menu {
+    margin-bottom: 20px;
+}
+
+.errorMessage{
+    border: solid 1px;
+    width: 15%;
+    line-height: 4;
+    padding-left: 15px;
+    margin: 0 0 30px 17%;
+    overflow: hidden;
+}
+
+.sessionShower{
+    position: fixed;
+    bottom: 0;
+}
+
+.form-control {
+    width:20%;
+}
+
+.btn-default {
+
+    background-color: #9d9d9d;
+}
+
+.table-bordered{
+    width: auto;
+    vertical-align: central;
+    background-color: white;
+}
+
+body {
+    background-color: #fcf8e3;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
+table, th {
+    text-align: center;
+}
+p {
+    position:relative;
+    cursor:pointer;
+    margin:-6px;
+}
+
+p:hover span{
+    display:block;
+}
